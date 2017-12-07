@@ -4,11 +4,13 @@
   "description": "a simple scaffold for some case",
   "main": "index.js",
   "scripts": {
-    "build": "set NODE_ENV=production&&webpack",
+    "build": "set NODE_ENV=production&& webpack",
     "start": "set NODE_ENV=dev&& node app.js",
     "test": "jest"
   },
-  "keywords": ["scaffold"],
+  "keywords": [
+    "scaffold"
+  ],
   "author": "whyang",
   "license": "MIT",
   "dependencies": {
@@ -28,6 +30,10 @@
   },
   "devDependencies": {
     "@types/extract-text-webpack-plugin": "^3.0.0",
-    "extract-text-webpack-plugin": "^3.0.2"
+    "@types/typescript": "^2.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "happypack": "^4.0.0",
+    "typescript": "^2.6.2",
+    "vue-loader": "^13.5.0"
   }
 }
