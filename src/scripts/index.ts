@@ -1,5 +1,5 @@
-import "../styles/ts.css"
-import "../styles/ts.scss"
+import "../styles/ts.css";
+import "../styles/ts.scss";
 interface Student {
   name: string;
 }

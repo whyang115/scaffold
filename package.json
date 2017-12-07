@@ -4,13 +4,12 @@
   "description": "a simple scaffold for some case",
   "main": "index.js",
   "scripts": {
-    "build": "set NODE_ENV=production&& webpack",
-    "start": "set NODE_ENV=dev&& node app.js",
+    "build": "set NODE_ENV=production&& webpack --color --progress",
+    "dev": "webpack-dev-server --watch-poll --hot --inline --progress --color",
+    "start": "node app.js",
     "test": "jest"
   },
-  "keywords": [
-    "scaffold"
-  ],
+  "keywords": ["scaffold"],
   "author": "whyang",
   "license": "MIT",
   "dependencies": {
@@ -30,10 +29,20 @@
   },
   "devDependencies": {
     "@types/extract-text-webpack-plugin": "^3.0.0",
+    "@types/html-webpack-plugin": "^2.30.1",
+    "@types/jest": "^21.1.8",
     "@types/typescript": "^2.0.0",
+    "@types/webpack-dev-server": "^2.9.2",
     "extract-text-webpack-plugin": "^3.0.2",
+    "fork-ts-checker-webpack-plugin": "^0.2.9",
+    "handlebars-loader": "^1.6.0",
     "happypack": "^4.0.0",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^21.2.1",
     "typescript": "^2.6.2",
-    "vue-loader": "^13.5.0"
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "vue-loader": "^13.5.0",
+    "webpack-dev-server": "^2.9.7",
+    "webpack-uglify-parallel": "^0.1.4"
   }
 }
